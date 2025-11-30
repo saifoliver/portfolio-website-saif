@@ -5,6 +5,7 @@
   <title>Mohammad Saif Uddin | Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/favicon.ico">
 </head>
 <body>
 <header>
@@ -18,53 +19,38 @@
       <a href="resume.html">Resume</a>
       <a href="contact.html">Contact</a>
     </nav>
+    <button id="theme-toggle" class="theme-toggle" type="button">☾</button>
   </div>
 </header>
 
 <main class="container">
-  <section class="hero">
+  <section class="hero fade-in">
     <div class="hero-text">
+      <p class="eyebrow">Engineering Management · Operations · Leadership</p>
       <h1>Hi, I’m Saif.</h1>
-      <p>Graduate student in Engineering Management with a passion for systems thinking, operations, and building things that actually work in the real world.</p>
-      <p>This portfolio is my professional home on the web – a place where you can learn who I am, what I’ve built, and how I can add value to your team.</p>
+      <p class="hero-lead">
+        Graduate student in Engineering Management, interested in optimizing systems,
+        improving operations, and leading teams that actually get things done.
+      </p>
+      <p>
+        This portfolio is my professional home on the web – a place where you can see
+        who I am, what I’ve built, and how I think about engineering, business, and people.
+      </p>
       <div class="hero-buttons">
         <a href="projects.html" class="btn">View Projects</a>
-        <a href="contact.html" class="btn btn-outline">Contact Me</a>
+        <a href="contact.html" class="btn btn-outline">Let’s Connect</a>
       </div>
     </div>
     <div class="hero-image">
-      <div class="avatar-placeholder">Your Photo Here</div>
+      <!-- Replace profile.jpg in /assets with your photo -->
+      <img src="assets/profile.jpg" alt="Photo of Saif" class="avatar-img">
     </div>
   </section>
 
-  <section class="section">
-    <h2>Quick Snapshot</h2>
+  <section class="section fade-in">
+    <h2>At a Glance</h2>
     <div class="cards">
       <div class="card">
         <h3>Current Focus</h3>
-        <p>M.S. in Engineering Management, developing leadership, operations, and data-driven decision skills.</p>
-      </div>
-      <div class="card">
-        <h3>Strengths</h3>
-        <p>Process improvement, communication, cross-functional collaboration, and a genuine love for problem-solving.</p>
-      </div>
-      <div class="card">
-        <h3>Goals</h3>
-        <p>To grow into an engineering leader who can align people, processes, and technology to deliver real results.</p>
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer>
-  <div class="container footer-container">
-    <span>© <span id="year"></span> Mohammad Saif Uddin</span>
-    <span>Built for Field Experience 1</span>
-  </div>
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
-</footer>
-</body>
-</html>
+        <p>M.S. in Engineering Management, building a mix of technical
 
