@@ -5,6 +5,7 @@
   <title>Skills | Saif Uddin</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/favicon.ico">
 </head>
 <body>
 <header>
@@ -18,32 +19,36 @@
       <a href="resume.html">Resume</a>
       <a href="contact.html">Contact</a>
     </nav>
+    <button id="theme-toggle" class="theme-toggle" type="button">☾</button>
   </div>
 </header>
 
 <main class="container">
-  <section class="section">
+  <section class="section fade-in">
     <h1>Skills</h1>
+    <p>Here’s a snapshot of the skills I’m building and using most often.</p>
+
     <div class="skills-grid">
       <div>
-        <h2>Technical Skills</h2>
+        <h2>Technical & Analytical</h2>
         <ul class="list">
           <li>Engineering Management fundamentals</li>
           <li>Operations & Supply Chain concepts</li>
-          <li>Basic data analysis and statistics</li>
-          <li>Project planning and Gantt charting</li>
-          <li>Basic HTML & CSS</li>
-          <li>Git & GitHub version control</li>
+          <li>Basic data analysis & statistics</li>
+          <li>Project planning & Gantt charting</li>
+          <li>Basic HTML & CSS for simple web projects</li>
+          <li>Git & GitHub for version control</li>
         </ul>
       </div>
       <div>
         <h2>Leadership & Soft Skills</h2>
         <ul class="list">
-          <li>Team communication and feedback</li>
-          <li>Goal setting and follow-through</li>
-          <li>Problem solving and critical thinking</li>
+          <li>Team communication & feedback</li>
+          <li>Active listening & empathy</li>
+          <li>Goal setting & follow-through</li>
+          <li>Time management & prioritization</li>
           <li>Cross-cultural awareness</li>
-          <li>Time management and prioritization</li>
+          <li>Comfort working in ambiguity with structure</li>
         </ul>
       </div>
     </div>
@@ -53,11 +58,15 @@
 <footer>
   <div class="container footer-container">
     <span>© <span id="year"></span> Mohammad Saif Uddin</span>
-    <span>Skills</span>
+    <span class="footer-links">
+      <a href="mailto:saifuddin1231238@gmail.com">Email</a> ·
+      <a href="https://www.linkedin.com/in/saifoliver" target="_blank">LinkedIn</a> ·
+      <a href="https://github.com/saifoliver" target="_blank">GitHub</a>
+    </span>
   </div>
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
 </footer>
+
+<script src="theme.js"></script>
 </body>
 </html>
+
