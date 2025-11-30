@@ -5,6 +5,7 @@
   <title>Projects | Saif Uddin</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/favicon.ico">
 </head>
 <body>
 <header>
@@ -18,34 +19,38 @@
       <a href="resume.html">Resume</a>
       <a href="contact.html">Contact</a>
     </nav>
+    <button id="theme-toggle" class="theme-toggle" type="button">☾</button>
   </div>
 </header>
 
 <main class="container">
-  <section class="section">
+  <section class="section fade-in">
     <h1>Projects</h1>
-    <p>Here are a few representative projects that highlight my interests and capabilities.</p>
+    <p>
+      These projects represent how I think and work – not just the final result, but the
+      problem, the approach, and the impact.
+    </p>
 
     <div class="cards">
       <div class="card project-card">
         <h2>Operations Concept – Automotive Import Strategy</h2>
-        <p><strong>Goal:</strong> Explore a niche market strategy for importing exclusive American vehicles into India.</p>
-        <p><strong>What I did:</strong> Researched customer segments, logistics constraints, and branding, and outlined a supply chain and operations plan.</p>
-        <p><strong>Result:</strong> Built a structured concept that can be developed into a full business and operations model.</p>
+        <p><strong>Goal:</strong> Explore a niche strategy for importing exclusive American vehicles into India.</p>
+        <p><strong>Approach:</strong> Researched customer segments, logistics, regulatory considerations, and brand positioning. Built a conceptual operations and supply chain model focusing on limited-volume, high-value imports.</p>
+        <p><strong>Outcome:</strong> Created a structured concept that can be developed into a more detailed business and operations plan, with clear risks and opportunities identified.</p>
       </div>
 
       <div class="card project-card">
         <h2>Engineering Leadership Portfolio</h2>
-        <p><strong>Goal:</strong> Create a portfolio to organize leadership toolkits and reflections.</p>
-        <p><strong>What I did:</strong> Designed navigation, added systems thinking, communication, and career planning sections.</p>
-        <p><strong>Result:</strong> Delivered a clear representation of my growth as an engineering leader.</p>
+        <p><strong>Goal:</strong> Build a leadership-focused portfolio capturing systems thinking, communication, ethics, and career planning tools.</p>
+        <p><strong>Approach:</strong> Designed a website, organized deliverables into clear sections, and wrote reflections to connect theory to practice.</p>
+        <p><strong>Outcome:</strong> Demonstrated growth in leadership readiness and created a resource I can reuse for future roles.</p>
       </div>
 
       <div class="card project-card">
         <h2>Applied Statistics Case Study</h2>
-        <p><strong>Goal:</strong> Use data analysis to support a management decision.</p>
-        <p><strong>What I did:</strong> Collected sample data, ran descriptive statistics and hypothesis tests, and presented recommendations.</p>
-        <p><strong>Result:</strong> Improved my ability to interpret data and communicate insights in business language.</p>
+        <p><strong>Goal:</strong> Use real data to support a management decision.</p>
+        <p><strong>Approach:</strong> Collected sample data, applied descriptive statistics and hypothesis testing, and translated results into simple recommendations for non-technical stakeholders.</p>
+        <p><strong>Outcome:</strong> Strengthened my ability to interpret results instead of just running calculations, and to communicate uncertainty honestly.</p>
       </div>
     </div>
   </section>
@@ -54,11 +59,14 @@
 <footer>
   <div class="container footer-container">
     <span>© <span id="year"></span> Mohammad Saif Uddin</span>
-    <span>Projects</span>
+    <span class="footer-links">
+      <a href="mailto:saifuddin1231238@gmail.com">Email</a> ·
+      <a href="https://www.linkedin.com/in/saifoliver" target="_blank">LinkedIn</a> ·
+      <a href="https://github.com/saifoliver" target="_blank">GitHub</a>
+    </span>
   </div>
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
 </footer>
+
+<script src="theme.js"></script>
 </body>
 </html>
