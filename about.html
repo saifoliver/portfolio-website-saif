@@ -5,6 +5,7 @@
   <title>About | Saif Uddin</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/favicon.ico">
 </head>
 <body>
 <header>
@@ -18,28 +19,67 @@
       <a href="resume.html">Resume</a>
       <a href="contact.html">Contact</a>
     </nav>
+    <button id="theme-toggle" class="theme-toggle" type="button">☾</button>
   </div>
 </header>
 
 <main class="container">
-  <section class="section">
+  <section class="section fade-in">
     <h1>About Me</h1>
-    <p>I am Mohammad Saif Uddin, a graduate student in Engineering Management with an engineering background and strong interest in operations, leadership, and data-driven problem solving.</p>
+    <p>
+      I’m Mohammad Saif Uddin, a graduate student in Engineering Management who enjoys
+      working where engineering, operations, and people meet. I like structure – clear
+      goals, clear plans, clear communication – but I’m also comfortable dealing with real-world
+      chaos and constraints.
+    </p>
+    <p>
+      I’m especially interested in roles where I can help improve processes, support teams,
+      and make decisions based on data and reality, not just spreadsheets.
+    </p>
+  </section>
 
-    <p>This portfolio represents my professional identity and showcases the projects, skills, and goals that define my journey. I enjoy working at the intersection of technical systems and human systems.</p>
+  <section class="section fade-in">
+    <h2>Mission, Vision & Values</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Mission</h3>
+        <p>To become an engineering leader who builds efficient, ethical, and sustainable systems while treating people with respect and clarity.</p>
+      </div>
+      <div class="card">
+        <h3>Vision</h3>
+        <p>To work in environments where I can lead cross-functional teams, improve operations, and use both technical knowledge and empathy to drive results.</p>
+      </div>
+      <div class="card">
+        <h3>Values</h3>
+        <ul class="list">
+          <li><strong>Integrity:</strong> Doing the right thing, especially when no one is watching.</li>
+          <li><strong>Ownership:</strong> Caring about outcomes, not just tasks.</li>
+          <li><strong>Curiosity:</strong> Always asking why something works (or doesn’t).</li>
+          <li><strong>Respect:</strong> Listening, being honest, and valuing people’s time.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-    <h2>Mission</h2>
-    <p>To become an engineering leader who builds efficient, ethical, and scalable systems through clear communication and structured decision-making.</p>
+  <section class="section fade-in">
+    <h2>How I Work</h2>
+    <p>
+      I like breaking large problems into smaller, manageable steps and then mapping them in
+      a simple plan or Gantt Chart. I ask questions early, prefer clear expectations, and
+      believe that small adjustments over time are usually more realistic than big dramatic changes.
+    </p>
+    <p>
+      I enjoy collaborating with people who are direct, open to feedback, and serious
+      about getting better, not just looking good.
+    </p>
+  </section>
 
-    <h2>Vision</h2>
-    <p>To lead high-impact teams and projects that create measurable improvements in performance and human experience.</p>
-
-    <h2>Values</h2>
+  <section class="section fade-in">
+    <h2>What I’m Looking For</h2>
     <ul class="list">
-      <li><strong>Integrity:</strong> Doing the right thing consistently.</li>
-      <li><strong>Ownership:</strong> Taking responsibility for results.</li>
-      <li><strong>Curiosity:</strong> Always learning and improving.</li>
-      <li><strong>Respect:</strong> Treating people with dignity and professionalism.</li>
+      <li>Teams that value learning, honesty, and execution.</li>
+      <li>Roles related to operations, engineering management, or business analytics.</li>
+      <li>Mentors and leaders who are willing to give real feedback.</li>
     </ul>
   </section>
 </main>
@@ -47,11 +87,14 @@
 <footer>
   <div class="container footer-container">
     <span>© <span id="year"></span> Mohammad Saif Uddin</span>
-    <span>About</span>
+    <span class="footer-links">
+      <a href="mailto:saifuddin1231238@gmail.com">Email</a> ·
+      <a href="https://www.linkedin.com/in/saifoliver" target="_blank">LinkedIn</a> ·
+      <a href="https://github.com/saifoliver" target="_blank">GitHub</a>
+    </span>
   </div>
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
 </footer>
+
+<script src="theme.js"></script>
 </body>
 </html>
