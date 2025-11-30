@@ -5,6 +5,7 @@
   <title>Contact | Saif Uddin</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/favicon.ico">
 </head>
 <body>
 <header>
@@ -18,32 +19,57 @@
       <a href="resume.html">Resume</a>
       <a href="contact.html" class="active">Contact</a>
     </nav>
+    <button id="theme-toggle" class="theme-toggle" type="button">☾</button>
   </div>
 </header>
 
 <main class="container">
-  <section class="section">
+  <section class="section fade-in">
     <h1>Contact</h1>
     <p>If you’d like to connect about opportunities, projects, or networking, feel free to reach out using the details below.</p>
 
-    <div class="contact-details">
-      <p><strong>Email:</strong>
-        <a href="mailto:saifuddin1231238@gmail.com">
-          saifuddin1231238@gmail.com
-        </a>
-      </p>
+    <div class="contact-layout">
+      <div class="contact-details">
+        <p><strong>Email:</strong>
+          <a href="mailto:saifuddin1231238@gmail.com">
+            saifuddin1231238@gmail.com
+          </a>
+        </p>
 
-      <p><strong>LinkedIn:</strong>
-        <a href="https://www.linkedin.com/in/saifoliver" target="_blank">
-          www.linkedin.com/in/saifoliver
-        </a>
-      </p>
+        <p><strong>LinkedIn:</strong>
+          <a href="https://www.linkedin.com/in/saifoliver" target="_blank">
+            www.linkedin.com/in/saifoliver
+          </a>
+        </p>
 
-      <p><strong>GitHub:</strong>
-        <a href="https://github.com/saifoliver" target="_blank">
-          github.com/saifoliver
-        </a>
-      </p>
+        <p><strong>GitHub:</strong>
+          <a href="https://github.com/saifoliver" target="_blank">
+            github.com/saifoliver
+          </a>
+        </p>
+
+        <p><strong>Location:</strong> United States (open to relocation)</p>
+      </div>
+
+      <div class="card">
+        <h2>Quick Message (non-functional demo)</h2>
+        <p>This simple form is for demo purposes only. Please use email or LinkedIn to actually contact me.</p>
+        <form class="contact-form" onsubmit="alert('For now, please contact me via email or LinkedIn.'); return false;">
+          <label>
+            Name
+            <input type="text" placeholder="Your name">
+          </label>
+          <label>
+            Email
+            <input type="email" placeholder="Your email">
+          </label>
+          <label>
+            Message
+            <textarea rows="4" placeholder="How can I help?"></textarea>
+          </label>
+          <button type="submit" class="btn">Send (Demo)</button>
+        </form>
+      </div>
     </div>
   </section>
 </main>
@@ -51,12 +77,14 @@
 <footer>
   <div class="container footer-container">
     <span>© <span id="year"></span> Mohammad Saif Uddin</span>
-    <span>Contact</span>
+    <span class="footer-links">
+      <a href="mailto:saifuddin1231238@gmail.com">Email</a> ·
+      <a href="https://www.linkedin.com/in/saifoliver" target="_blank">LinkedIn</a> ·
+      <a href="https://github.com/saifoliver" target="_blank">GitHub</a>
+    </span>
   </div>
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
 </footer>
+
+<script src="theme.js"></script>
 </body>
 </html>
-
